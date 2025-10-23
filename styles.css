@@ -10,7 +10,7 @@
     /* set name */
     src: url("poppins/Poppins-Light.ttf");
     /* url of the font */
-    /* https://www.1001fonts.com/open-sans-font.html */
+    /* https://www.1001fonts.com/poppins-font.html */
 }
 
 /* Grundfärger */
@@ -37,7 +37,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    /* background: rgba(102, 4, 194, 0.9); */
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(8px);
     position: fixed;
     top: 0;
@@ -53,6 +53,7 @@ body {
     color: var(--text-color);
     font-weight: 500;
     transition: color 0.2s ease;
+    font-size: 1.5rem;
 }
 
 .navbar a:hover {
@@ -103,6 +104,10 @@ body {
 
 .hero span {
     color: var(--accent-color);
+}
+
+#introduction {
+    text-align: left;
 }
 
 #hero-buttons-container {
@@ -160,7 +165,7 @@ body {
 
 /* Sections */
 section {
-    min-height: 1000px;
+    /* min-height: 1000px; */
     padding: 4rem 2rem;
     margin: auto;
     text-align: center;
@@ -179,7 +184,6 @@ section h3 {
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 2rem;
-
 }
 
 .project-grid a {
