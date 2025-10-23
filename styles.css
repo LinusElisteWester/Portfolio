@@ -1,0 +1,244 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bold-font;
+    /* set name */
+    src: url("poppins/Poppins-Light.ttf");
+    /* url of the font */
+    /* https://www.1001fonts.com/open-sans-font.html */
+}
+
+/* Grundfärger */
+:root {
+    --bg-color: #ebebeb;
+    --card-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #7c0fe2;
+    --accent-hover: #6c08ca;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    /* background: rgba(102, 4, 194, 0.9); */
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 50px 50px;
+    width: 100%;
+}
+
+.navbar a {
+    margin-left: 1.2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: var(--accent-hover);
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+#github-logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease;
+}
+
+#github-logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+#hero-container {
+    width: 1200px;
+    margin: auto;
+}
+
+/* Hero */
+.hero {
+    min-height: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-color);
+    padding: 2rem;
+    margin: 10px;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    height: fit-content;
+}
+
+.hero h2 {
+    font-size: 2rem;
+}
+
+.hero span {
+    color: var(--accent-color);
+}
+
+#hero-buttons-container {
+    margin: 20px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.1s ease;
+    margin: 0 10px;
+    box-shadow: #000000 3px 5px 5px -5px;
+}
+
+.btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.btn:nth-child(2) {
+    background: white;
+    color: var(--text-color);
+    border: #000000 1px solid;
+}
+
+.btn:nth-child(2):hover {
+    filter: invert();
+    transition: 0.2s ease;
+}
+
+#hero-image {
+    border-radius: 50%;
+    border: #6c08ca 4px solid;
+    right: 0
+}
+
+#hero-image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    float: right;
+}
+
+/* Sections */
+section {
+    min-height: 1000px;
+    padding: 4rem 2rem;
+    margin: auto;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+}
+
+/* Projects */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+}
+
+.project-grid a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+}
+
+.project * {
+    margin: 0 1rem;
+}
+
+.card {
+    background: var(--card-color);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    text-align: left;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--accent-hover);
+}
+
+.card h4 {
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.project-image {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    max-height: 400px;
+}
+
+/* Contact */
+.contact p {
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    background: #111;
+    color: #888;
+    margin-top: 4rem;
+    border-top: 1px solid #222;
+}
