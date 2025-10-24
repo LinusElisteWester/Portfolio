@@ -198,6 +198,14 @@ section h3 {
 
 .project * {
     margin: 0 1rem;
+    height: fit-content;
+}
+
+.project-image {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    max-height: 400px;
 }
 
 .card {
@@ -224,11 +232,63 @@ section h3 {
     opacity: 0.9;
 }
 
-.project-image {
-    max-width: 500px;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    max-height: 400px;
+/* Skills */
+.skills-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skills-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.skills-grid.active {
+    opacity: 1;
+    z-index: 5;
+}
+
+.skills-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+button.prev {
+    right: 400px;
+}
+
+button.next {
+    left: 400px;
 }
 
 /* Contact */
