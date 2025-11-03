@@ -363,14 +363,37 @@ footer {
     display: none;
   }
 
+  .hero {
+    padding: 0;
+  }
+
   #hero-container {
     margin-top: 100px;
+    padding: 0;
   }
 
   #hero-buttons-container {
     display: flex;
     flex-direction: row;
+    font-size: 0.8rem;
+  }
+
+  #hero-container h1 {
+    font-size: 2.3rem;
+
+  }
+
+  #hero-container h2 {
+    font-size: 1.5rem;
+  }
+
+  #hero-container p {
     font-size: 1rem;
+  }
+
+  #hero-image img {
+    max-width: 300px;
+    max-height: 300px;
   }
 
   .project * {
@@ -379,9 +402,5 @@ footer {
 
   .hero h1 {
     font-size: 3rem;
-  }
-
-  #introduction {
-    line-height: normal;
   }
 }
