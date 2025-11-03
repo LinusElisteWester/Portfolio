@@ -5,21 +5,17 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: bold-font;
-  /* set name */
-  src: url("poppins/Poppins-Light.ttf");
-  /* url of the font */
-  /* https://www.1001fonts.com/poppins-font.html */
-}
-
-/* Grundfärger */
+/* Base colors */
 :root {
   --bg-color: #ebebeb;
   --card-color: #ffffff;
   --text-color: #000000;
   --accent-color: #7c0fe2;
   --accent-hover: #6c08ca;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -30,10 +26,12 @@ body {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 
 /* Navbar */
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,35 +73,39 @@ body {
 #github-logo:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease;
+  rotate: 5deg;
 }
 
 /* Hero */
-#hero-container {
-  width: 1200px;
+.hero {
+  width: 100vw;
+  max-width: 1200px;
   margin: auto;
 }
 
-.hero {
+#hero-container {
   min-height: 1000px;
+  width: 100%;
+  text-align: center;
+  max-width: 1200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background: var(--bg-color);
   padding: 2rem;
-  margin: 10px;
 }
 
-.hero h1 {
+#hero-container h1 {
   font-size: 4.5rem;
   height: fit-content;
 }
 
-.hero h2 {
+#hero-container h2 {
   font-size: 2rem;
 }
 
-.hero span {
+#hero-container span {
   color: var(--accent-color);
 }
 
@@ -115,7 +117,7 @@ body {
   margin: 20px;
 }
 
-.hero p {
+#hero-container p {
   font-size: 1.1rem;
   max-width: 600px;
   opacity: 0.9;
@@ -166,7 +168,7 @@ body {
 
 /* Sections */
 section {
-  /* min-height: 1000px; */
+  width: 99vw;
   padding: 4rem 2rem;
   margin: auto;
   text-align: center;
@@ -180,11 +182,14 @@ section h3 {
 
 /* Projects */
 .project-grid {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-grid a {
@@ -203,55 +208,50 @@ section h3 {
 }
 
 .project-image {
-  max-width: 500px;
+  width: 450px;
   border-radius: 10px;
   margin-bottom: 1rem;
-  max-height: 400px;
 }
 
-.card {
+.project-card {
   background: var(--card-color);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   padding: 1.5rem;
   text-align: left;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 550px;
 }
 
-.card:hover {
+.project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px var(--accent-hover);
 }
 
-.card h4 {
+.project-card h4 {
   color: var(--accent-color);
   margin-bottom: 0.5rem;
 }
 
-.card p {
+.project-card p {
   font-size: 0.95rem;
-  opacity: 0.9;
+}
+
+.project-card img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  bottom: -2px;
+  vertical-align: text-bottom;
 }
 
 /* Skills */
-/* The outer wrapper handles layout */
-.skills-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  /* space between arrows and container */
-  max-width: 900px;
-  margin: 2rem auto;
-}
-
-/* Fixed width for container so arrows stay in place */
 .skills-container {
-  position: relative;
-  width: 600px;
-  /* ✅ keeps total width consistent */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* width: 500px; */
   min-height: 250px;
-  /* give room for wrapping */
   overflow: hidden;
   transition: height 0.4s ease;
   display: flex;
@@ -259,24 +259,25 @@ section h3 {
   align-items: center;
 }
 
+.skills-container h4 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
 /* Slides */
 .skills-grid {
-  position: absolute;
+  position: relative;
   inset: 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  gap: 1rem;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-}
-
-.skills-grid.active {
+  /* gap: 1rem; */
   opacity: 1;
-  position: relative;
-  /* inset: unset; */
-  z-index: 5;
+  transition: opacity 0.4s ease-in-out;
 }
 
 /* Skill cards */
@@ -292,34 +293,23 @@ section h3 {
   font-size: 1.1rem;
   box-sizing: border-box;
   min-width: 150px;
+  margin: 15px;
+  transition: 0.2s ease;
+  cursor: default;
+  width: 160px;
 }
 
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px var(--accent-hover);
+  transition: 0.2s ease;
+}
 
 /* Skill icons */
 .skills-image {
   width: 40px;
   height: 40px;
 }
-
-/* Arrows */
-button.prev,
-button.next {
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  border: none;
-  padding: 0.8rem 1rem;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: background-color 0.2s ease;
-  flex-shrink: 0;
-  /* ✅ ensures arrows keep their size */
-}
-
-button.prev:hover,
-button.next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 
 /* Contact */
 .contact p {
@@ -337,22 +327,59 @@ footer {
   border-top: 1px solid #222;
 }
 
-@media (max-width: 600px) {
-  .skill-card {
-    flex: 0 1 100%;
-    /* stack on small screens */
+/* Media Queries */
+@media (max-width: 1200px) {
+  #hero-container {
+    width: 90vw;
+    margin-top: 200px;
+    flex-direction: column;
+  }
+
+  #hero-container > * {
+    margin: 10px;
+  }
+
+  #introduction {
+    text-align: center;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project > * {
+    margin: 1rem 0;
   }
 }
 
-@media (max-width: 1200px) {
-  *:not(button) {
-    width: 100%;
+@media (max-width: 750px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
   }
 
-  .hero {
+  #hero-container {
+    margin-top: 150px;
+  }
+
+  #hero-buttons-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+  }
+
+  .project * {
     width: 100%;
-    margin-top: 200px;
-    flex-direction: column;
-    text-align: center;
+    /* padding: 20px; */
+  }
+
+  .hero h1 {
+    font-size: 3rem;
   }
 }

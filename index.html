@@ -11,19 +11,18 @@
 <body>
     <header class="navbar">
         <p class="name">Linus</p>
-        <nav>
+        <nav class="nav-links">
             <a href="#" style="color: var(--accent-color);">Home</a>
             <a href="#projects">Projects</a>
             <a href="#about">About&nbsp;Me</a>
         </nav>
         <div class="socials">
-            <a href="https://github.com/LinusElisteWester" target="_blank"><img id="github-logo"
-                    src="images/github-mark.svg" alt="github"></a>
+            <a href="https://github.com/LinusElisteWester" target="_blank"><img id="github-logo" src="images/github-logo.svg" alt="github"></a>
         </div>
     </header>
 
-    <div id="hero-container">
-        <section class="hero">
+    <section class="hero section">
+        <div id="hero-container">
             <div id="introduction">
                 <h2>Hi, I'm Linus</h2>
                 <h1><span>Junior</span> Developer</h1>
@@ -36,24 +35,27 @@
             <div id="hero-image">
                 <img src="images/mysterybox.png" alt="">
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
     <section id="projects" class="section">
         <h3>Projects</h3>
         <div class="project-grid">
             <div class="project">
-                <div class="card">
+                <div class="project-card">
                     <h4>Delikat flora</h4>
-                    <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                    <p>A responsive website built with <img src="images/html-logo.svg" alt="">HTML, <img src="images/css-logo.svg" alt="">CSS, and
+                        <img src="images/js-logo.svg" alt=""> JavaScript.</p>
                 </div>
-                <img src="images/Delikat-flora.jpg" class="project-image" alt="">
+                <img src="images/Delikat-flora.png" class="project-image" alt="">
             </div>
             <div class="project">
-                <div class="card">
+                <div class="project-card">
                     <h4>Fjellporten</h4>
-                    <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                    <p>A responsive website built with <img src="images/html-logo.svg" alt="">HTML, <img src="images/css-logo.svg" alt="">CSS, and
+                        <img src="images/js-logo.svg" alt=""> JavaScript.</p>
                 </div>
-                <img src="images/Fjellporten-kopia.png" class="project-image" alt="">
+                <img src="images/Fjellporten.png" class="project-image" alt="">
             </div>
         </div>
     </section>
@@ -66,69 +68,62 @@
     </section>
     <section id="skills" class="section">
         <h3>Skills</h3>
-        <div class="skills-wrapper">
-            <button class="prev">❮</button>
-
-            <div class="skills-container">
-                <div class="skills-grid active">
-                    <div class="card skill-card"><img src="images/html-svgrepo-com.svg" class="skills-image" alt="">
-                        <div>HTML</div>
-                    </div>
-                    <div class="card skill-card"><img src="images/css-svgrepo-com.svg" class="skills-image" alt="">
-                        <div>CSS</div>
-                    </div>
-                    <div class="card skill-card"><img src="images/js-official-svgrepo-com.svg" class="skills-image"
-                            alt="">
-                        <div>JavaScript</div>
-                    </div>
-                    <div class="card skill-card"><img src="images/python-svgrepo-com.svg" class="skills-image" alt="">
-                        <div>Python</div>
-                    </div>
+        <div class="skills-container">
+            <h4>Programming Languages</h4>
+            <div class="skills-grid">
+                <div class="skill-card"><img src="images/html-logo.svg" class="skills-image" alt="">
+                    <div>HTML</div>
                 </div>
-
-                <div class="skills-grid">
-                    <div class="card skill-card"><img src="images/node-svgrepo-com.svg" class="skills-image" alt="">
-                        <div>Node.js</div>
-                    </div>
-                    <div class="card skill-card"><img src="images/express-js-icon.svg" class="skills-image" alt="">
-                        <div>Express.js</div>
-                    </div>
+                <div class="skill-card"><img src="images/css-logo.svg" class="skills-image" alt="">
+                    <div>CSS</div>
                 </div>
-
-                <div class="skills-grid">
-                    <div class="card skill-card"><img src="images/mysql-icon.svg" class="skills-image" alt="">
-                        <div>MySQL</div>
-                    </div>
-                    <div class="card skill-card"><img src="images/sqlite-icon.svg" class="skills-image" alt="">
-                        <div>SQLite</div>
-                    </div>
-                    <div class="card skill-card"><img src="images/supabase-logo-icon.svg" class="skills-image" alt="">
-                        <div>Supabase</div>
-                    </div>
+                <div class="skill-card"><img src="images/js-logo.svg" class="skills-image" alt="">
+                    <div>JavaScript</div>
                 </div>
-
-                <div class="skills-grid">
-                    <div class="card skill-card"><img src="images/git-svgrepo-com.svg" class="skills-image" alt="">
-                        <div>Git</div>
-                    </div>
+                <div class="skill-card"><img src="images/python-logo.svg" class="skills-image" alt="">
+                    <div>Python</div>
                 </div>
             </div>
-
-            <button class="next">❯</button>
+            <h4>Backend</h4>
+            <div class="skills-grid">
+                <div class="skill-card"><img src="images/node-js-logo.svg" class="skills-image" alt="">
+                    <div>Node.js</div>
+                </div>
+                <div class="skill-card"><img src="images/express-js-logo.svg" class="skills-image" alt="">
+                    <div>Express.js</div>
+                </div>
+            </div>
+            <h4>Databases</h4>
+            <div class="skills-grid">
+                <div class="skill-card"><img src="images/mysql-logo.svg" class="skills-image" alt="">
+                    <div>MySQL</div>
+                </div>
+                <div class="skill-card"><img src="images/sqlite-logo.svg" class="skills-image" alt="">
+                    <div>SQLite</div>
+                </div>
+                <div class="skill-card"><img src="images/supabase-logo.svg" class="skills-image" alt="">
+                    <div>Supabase</div>
+                </div>
+            </div>
+            <h4>Tools</h4>
+            <div class="skills-grid">
+                <div class="skill-card"><img src="images/git-logo.svg" class="skills-image" alt="">
+                    <div>Git</div>
+                </div>
+            </div>
         </div>
-
     </section>
 
     <section id="contact" class="section contact">
         <h3>Contact</h3>
         <p>Do you want to collaborate or just say hi? Get in touch!</p>
+        <p>Email: elistewesterlinus.dev@gmail.com</p>
         <a href="mailto:elistewesterlinus.dev@gmail.com" class="btn">Send Email</a>
     </section>
     </div>
     <footer>
         © 2025 Linus Eliste Wester – Portfolio
     </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>
