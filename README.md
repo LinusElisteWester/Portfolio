@@ -14,4 +14,4 @@ Express js icon by [uxwing](https://uxwing.com/express-js-icon/)
 
 Git icon by vscode-icons, from [SVGRepo](https://www.svgrepo.com/svg/373623/git), licensed under MIT.
 
-https://www.svgrepo.com/svg/8109/menu-symbol-of-three-parallel-lines
+Problem solving icon by Justicon from [SVGRepo](https://www.svgrepo.com/svg/454720/think-creative-thinking), licensed under CC Attribution license. Read more [here](https://www.svgrepo.com/page/licensing/#CC%20Attribution)
