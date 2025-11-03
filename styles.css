@@ -76,7 +76,6 @@ body {
 
 /* Hero */
 .hero {
-  width: 100vw;
   max-width: 1200px;
   margin: auto;
 }
@@ -109,6 +108,7 @@ body {
 
 #introduction {
   text-align: left;
+  line-height: normal;
 }
 
 #hero-buttons-container {
@@ -166,7 +166,7 @@ body {
 
 /* Sections */
 section {
-  width: 99vw;
+  width: 90vw;
   padding: 4rem 2rem;
   margin: auto;
   text-align: center;
@@ -206,7 +206,7 @@ section h3 {
 }
 
 .project-image {
-  width: 450px;
+  max-width: 450px;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -291,7 +291,6 @@ section h3 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   font-size: 1.1rem;
   box-sizing: border-box;
-  min-width: 150px;
   margin: 15px;
   transition: 0.2s ease;
   cursor: default;
@@ -329,9 +328,10 @@ footer {
 /* Media Queries */
 @media (max-width: 1200px) {
   #hero-container {
-    width: 90vw;
     margin-top: 200px;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   #hero-container>* {
@@ -364,7 +364,7 @@ footer {
   }
 
   #hero-container {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   #hero-buttons-container {
@@ -375,10 +375,13 @@ footer {
 
   .project * {
     width: 100%;
-    /* padding: 20px; */
   }
 
   .hero h1 {
     font-size: 3rem;
+  }
+
+  #introduction {
+    line-height: normal;
   }
 }
