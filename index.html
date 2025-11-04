@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linus – Portfolio</title>
+    <title>Linus</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="navbar">
-        <p class="name">Linus</p>
+        <p class="name">L</p>
         <nav class="nav-links">
             <a href="#" style="color: var(--accent-color);">Home</a>
             <a href="#projects">Projects</a>
@@ -26,7 +26,13 @@
             <div id="introduction">
                 <h2>Hi, I'm Linus</h2>
                 <h1><span>Junior</span> Developer</h1>
-                <p>A Swedish junior developer with a passion for tech and problem-solving</p>
+                <p style="margin-bottom: 20px;">A Swedish junior developer with a passion for tech and problem solving</p>
+                <p>
+                    Hi, I’m Linus, a 19-year-old student at NTI Gymnasiet Uppsala.
+                    I’ve always been curious about how technology works and enjoy exploring how things work behind the scenes.
+                    I spent three years studying Information and Media Technology and
+                    I am now working towards becoming an upper secondary school engineer.
+                </p>
                 <div id="hero-buttons-container">
                     <a href="#contact" class="btn">Contact Me</a>
                     <a href="#projects" class="btn">My Projects</a>
@@ -41,56 +47,42 @@
     <section id="projects" class="section">
         <h3>Projects</h3>
         <div class="project-grid">
-            <div class="project">
-                <div class="project-card">
-                    <h4>Delikat flora</h4>
-                    <p>A modern website with backend integration and database features.</p>
-                    <div id="programming-languages">
-                        <img src="images/html-logo.svg" alt="">
-                        <img src="images/css-logo.svg" alt="">
-                        <img src="images/js-logo.svg" alt="">
-                        <img src="images/node-js-logo.svg" alt="">
-                        <img src="images/express-js-logo.svg" alt="">
-                        <img src="images/supabase-logo.svg" alt="">
-                        <img src="images/python-logo.svg" alt="">
-                    </div>
-                </div>
+            <div class="project-card">
+                <h4>Delikat flora</h4>
+                <p>A modern website with backend integration and database features.</p>
                 <a href="https://delikat.ntig.dev/products_english.html" target="_blank">
                     <img src="images/Delikat-flora.png" class="project-image" alt="">
                 </a>
-            </div>
-            <div class="project">
-                <div class="project-card">
-                    <h4>Fjellporten</h4>
-                    <p>An interactive web application with dynamic content and backend support.</p>
-                    <div id="programming-languages">
-                        <img src="images/html-logo.svg" alt="">
-                        <img src="images/css-logo.svg" alt="">
-                        <img src="images/js-logo.svg" alt="">
-                        <img src="images/node-js-logo.svg" alt="">
-                        <img src="images/express-js-logo.svg" alt="">
-                        <img src="images/supabase-logo.svg" alt="">
-                        <img src="images/python-logo.svg" alt="">
-                    </div>
+                <div class="programming-languages">
+                    <img src="images/html-logo.svg" alt="">
+                    <img src="images/css-logo.svg" alt="">
+                    <img src="images/js-logo.svg" alt="">
+                    <img src="images/node-js-logo.svg" alt="">
+                    <img src="images/express-js-logo.svg" alt="">
+                    <img src="images/supabase-logo.svg" alt="">
+                    <img src="images/python-logo.svg" alt="">
                 </div>
+            </div>
+
+            <div class="project-card">
+                <h4>Fjellporten</h4>
+                <p>An interactive web application with dynamic content and backend support.</p>
                 <a href="https://fjellporten.ntig.dev/" target="_blank">
                     <img src="images/Fjellporten.png" class="project-image" alt="">
                 </a>
+                <div class="programming-languages">
+                    <img src="images/html-logo.svg" alt="">
+                    <img src="images/css-logo.svg" alt="">
+                    <img src="images/js-logo.svg" alt="">
+                    <img src="images/node-js-logo.svg" alt="">
+                    <img src="images/express-js-logo.svg" alt="">
+                    <img src="images/supabase-logo.svg" alt="">
+                    <img src="images/python-logo.svg" alt="">
+                </div>
             </div>
-
-        </div>
         </div>
     </section>
 
-    <section id="about" class="section">
-        <h3>About Me</h3>
-        <p>
-            Hi, I’m Linus, a 19-year-old student at NTI Gymnasiet Uppsala.
-            I’ve always been curious about how technology works and enjoy exploring how things work behind the scenes.
-            I spent three years studying Information and Media Technology and
-            I am now working towards becoming an upper secondary school engineer.
-        </p>
-    </section>
     <section id="skills" class="section">
         <h3>Skills</h3>
         <div class="skills-container">
@@ -105,39 +97,94 @@
                 <div class="skill-card"><img src="images/js-logo.svg" class="skills-image" alt="">
                     <div>JavaScript</div>
                 </div>
-                <div class="skill-card"><img src="images/python-logo.svg" class="skills-image" alt="">
-                    <div>Python</div>
-                </div>
+                <a href="https://www.python.org/" target="_blank">
+                    <div class="skill-card"><img src="images/python-logo.svg" class="skills-image" alt="">
+                        <div>Python</div>
+                    </div>
+                </a>
             </div>
             <h4>Backend</h4>
             <div class="skills-grid">
-                <div class="skill-card"><img src="images/node-js-logo.svg" class="skills-image" alt="">
-                    <div>Node.js</div>
-                </div>
-                <div class="skill-card"><img src="images/express-js-logo.svg" class="skills-image" alt="">
-                    <div>Express.js</div>
-                </div>
+                <a href="https://nodejs.org/en" target="_blank">
+                    <div class="skill-card"><img src="images/node-js-logo.svg" class="skills-image" alt="">
+                        <div>Node.js</div>
+                    </div>
+                </a>
+                <a href="https://expressjs.com/" target="_blank">
+                    <div class="skill-card"><img src="images/express-js-logo.svg" class="skills-image" alt="">
+                        <div>Express.js</div>
+                    </div>
+                </a>
             </div>
             <h4>Databases</h4>
             <div class="skills-grid">
-                <div class="skill-card"><img src="images/mysql-logo.svg" class="skills-image" alt="">
-                    <div>MySQL</div>
-                </div>
-                <div class="skill-card"><img src="images/sqlite-logo.svg" class="skills-image" alt="">
-                    <div>SQLite</div>
-                </div>
-                <div class="skill-card"><img src="images/supabase-logo.svg" class="skills-image" alt="">
-                    <div>Supabase</div>
-                </div>
+                <a href="https://www.mysql.com/" target="_blank">
+                    <div class="skill-card"><img src="images/mysql-logo.svg" class="skills-image" alt="">
+                        <div>MySQL</div>
+                    </div>
+                </a>
+                <a href="https://sqlite.org/" target="_blank">
+                    <div class="skill-card"><img src="images/sqlite-logo.svg" class="skills-image" alt="">
+                        <div>SQLite</div>
+                    </div>
+                </a>
+                <a href="https://supabase.com/" target="_blank">
+                    <div class="skill-card"><img src="images/supabase-logo.svg" class="skills-image" alt="">
+                        <div>Supabase</div>
+                    </div>
+                </a>
             </div>
             <h4>Tools & Skills</h4>
             <div class="skills-grid">
-                <div class="skill-card"><img src="images/git-logo.svg" class="skills-image" alt="">
-                    <div>Git</div>
-                </div>
+                <a href="https://git-scm.com/" target="_blank">
+                    <div class="skill-card"><img src="images/git-logo.svg" class="skills-image" alt="">
+                        <div>Git</div>
+                    </div>
+                </a>
                 <div class="skill-card"><img src="images/problem-solving-logo.svg" class="skills-image" alt="">
                     <div>Problem Solving</div>
                 </div>
+                <a href="https://www.raspberrypi.com/" target="_blank">
+                    <div class="skill-card"><img src="images/Raspberry_Pi_Logo.svg" class="skills-image" alt="">
+                        <div>Raspberry Pi</div>
+                    </div>
+                </a>
+                <a href="https://www.pygame.org/news" target="_blank">
+                    <div class="skill-card"><img src="images/pygame_logo.svg" class="skills-image" alt="">
+                        <div>Pygame</div>
+                    </div>
+                </a>
+                <a href="https://www.scrum.org/" target="_blank">
+                    <div class="skill-card"><img src="images/scrum-logo.svg" class="skills-image" alt="">
+                        <div>Scrum</div>
+                    </div>
+                </a>
+                <a href="https://www.unity.com/" target="_blank">
+                    <div class="skill-card"><img src="images/unity-logo.svg" class="skills-image" alt="">
+                        <div>Unity</div>
+                    </div>
+                </a>
+                <a href="https://godotengine.org/" target="_blank">
+                    <div class="skill-card"><img src="images/godot-logo.svg" class="skills-image" alt="">
+                        <div>Godot</div>
+                    </div>
+                </a>
+                <a href="https://www.arduino.cc/" target="_blank">
+                    <div class="skill-card"><img src="images/arduino-logo.svg" class="skills-image" alt="">
+                        <div>Arduino</div>
+                    </div>
+                </a>
+            </div>
+            <h4>OS</h4>
+            <div class="skills-grid">
+                <div class="skill-card"><img src="images/linux-logo.svg" class="skills-image" alt="">
+                    <div>Linux</div>
+                </div>
+                <a href="https://www.microsoft.com/en-us/windows" target="_blank">
+                    <div class="skill-card">
+                        <div>Windows</div>
+                    </div>
+                </a>
             </div>
     </section>
 

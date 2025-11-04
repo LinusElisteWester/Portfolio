@@ -22,4 +22,12 @@ MySQL icon by Oracle, from [MySQL](https://www.mysql.com/about/legal/logos.html)
 
 Express.js icon by [OpenJS](https://expressjs.com/en/resources/community.html) Foundation
 
-Problem solving icon by Justicon from [SVGRepo](https://www.svgrepo.com/svg/454720/think-creative-thinking), licensed under CC Attribution license.
+Problem solving icon by Justicon from [SVGRepo](https://www.svgrepo.com/svg/454720/think-creative-thinking), licensed under CC Attribution License.
+
+Scrum icon by zwicon, from [SVGRepo](https://www.svgrepo.com/svg/379764/agile), licensed under CC Attribution License
+
+Unity icon by jtblabs, from [SVGRepo](https://www.svgrepo.com/svg/473818/unity), licensed under Logo License
+
+Arduino icon from [techicons](https://techicons.dev/icons/arduino)
+
+Windows icon, [guidelines](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/mscle/documents/presentations/Windows_Trademark_guidelines_2023.pdf)

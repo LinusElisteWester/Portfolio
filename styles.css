@@ -1,8 +1,14 @@
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+@font-face {
+  font-family: myFont;
+  /* set name */
+  src: url('notedry/Notedry.otf');
+  /* url of the font */
 }
 
 /* Base colors */
@@ -26,6 +32,11 @@ body {
   line-height: 1.6;
   display: flex;
   flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Navbar */
@@ -58,8 +69,9 @@ body {
 }
 
 .name {
-  font-weight: bold;
-  font-size: 1.3rem;
+  margin-left: 10px;
+  font-family: myFont;
+  font-size: 3rem;
 }
 
 #github-logo {
@@ -182,7 +194,7 @@ section h3 {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1.5rem;
   margin-top: 2rem;
   justify-content: center;
@@ -194,23 +206,14 @@ section h3 {
   color: var(--text-color);
 }
 
-.project {
-  display: flex;
-  flex-direction: row;
-}
-
 .project * {
-  margin: 0 1rem;
   height: fit-content;
-}
-
-.project-image {
-  max-width: 450px;
-  border-radius: 10px;
-  margin: 0;
+  justify-content: center;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   background: var(--card-color);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
@@ -219,22 +222,22 @@ section h3 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   max-width: 550px;
   cursor: default;
+  justify-content: center;
+  align-items: center;
 }
 
-#programming-languages {
+.programming-languages {
   display: flex;
   gap: 5px;
   margin-top: 20px;
 }
 
-#programming-languages img {
+.programming-languages img {
   width: 25px;
   height: 25px;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px var(--accent-hover);
+  margin: 0;
+  bottom: -2px;
+  vertical-align: text-bottom;
 }
 
 .project-card h4 {
@@ -246,12 +249,16 @@ section h3 {
   font-size: 0.95rem;
 }
 
-.project-card img {
-  width: 20px;
-  height: 20px;
-  margin: 0;
-  bottom: -2px;
-  vertical-align: text-bottom;
+.project-card a {
+  width: fit-content;
+}
+
+.project-image {
+  /* max-width: 100%; */
+  max-height: 500px;
+  border-radius: 10px;
+  padding: 0;
+  margin-top: 1rem;
 }
 
 /* About Me */
@@ -266,7 +273,6 @@ section h3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* width: 500px; */
   min-height: 250px;
   overflow: hidden;
   transition: height 0.4s ease;
@@ -287,7 +293,6 @@ section h3 {
   position: relative;
   inset: 0;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
@@ -310,7 +315,7 @@ section h3 {
   box-sizing: border-box;
   margin: 15px;
   transition: 0.2s ease;
-  cursor: default;
+  /* cursor: pointer; */
   min-width: 170px;
   max-width: 220px;
 }
@@ -360,7 +365,7 @@ footer {
     height: 800px;
   }
 
-  #hero-container>* {
+  #hero-container > * {
     margin: 10px;
   }
 
@@ -373,18 +378,12 @@ footer {
     align-items: center;
   }
 
-  .project>* {
+  .project > * {
     margin: 1rem 0;
   }
 }
 
 @media (max-width: 750px) {
-  .hero h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 600px) {
   .nav-links {
     display: none;
   }
@@ -409,7 +408,6 @@ footer {
 
   #hero-container h1 {
     font-size: 2.5rem;
-
   }
 
   #hero-container h2 {
@@ -433,3 +431,5 @@ footer {
     font-size: 3rem;
   }
 }
+
+@media (max-width: 600px) {}
