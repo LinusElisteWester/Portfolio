@@ -10,8 +10,16 @@ Python icon by vscode-icons, from [SVGRepo](https://www.svgrepo.com/svg/374016/p
 
 Nodejs icon by vscode-icons, from [SVGRepo](https://www.svgrepo.com/svg/373929/node), licensed under MIT.
 
-Express js icon by [uxwing](https://uxwing.com/express-js-icon/)
-
 Git icon by vscode-icons, from [SVGRepo](https://www.svgrepo.com/svg/373623/git), licensed under MIT.
 
-Problem solving icon by Justicon from [SVGRepo](https://www.svgrepo.com/svg/454720/think-creative-thinking), licensed under CC Attribution license. Read more [here](https://www.svgrepo.com/page/licensing/#CC%20Attribution)
+Sqlite icon by vscode-icons, from [SVGRepo](https://www.svgrepo.com/svg/374094/sqlite), licensed under MIT
+
+Github icon by Github, Inc. From [Github](https://github.com/logos)
+
+Supabase icon by Supabase, from [Supabase](https://supabase.com/brand-assets) 
+
+MySQL icon by Oracle, from [MySQL](https://www.mysql.com/about/legal/logos.html)
+
+Express.js icon by [OpenJS](https://expressjs.com/en/resources/community.html) Foundation
+
+Problem solving icon by Justicon from [SVGRepo](https://www.svgrepo.com/svg/454720/think-creative-thinking), licensed under CC Attribution license.
