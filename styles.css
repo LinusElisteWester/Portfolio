@@ -5,10 +5,8 @@
 }
 
 @font-face {
-  font-family: myFont;
-  /* set name */
-  src: url('notedry/Notedry.otf');
-  /* url of the font */
+  font-family: noteFont;
+  src: url('fonts/Notedry.otf');
 }
 
 /* Base colors */
@@ -71,7 +69,7 @@ a {
 
 .name {
   margin-left: 10px;
-  font-family: myFont;
+  font-family: noteFont;
   font-size: 3rem;
 }
 
@@ -81,7 +79,8 @@ a {
   transition: transform 0.2s ease;
 }
 
-#github-logo:hover {
+#github-logo:hover,
+.programming-languages img:hover {
   transform: scale(1.1);
   transition: transform 0.2s ease;
   rotate: 5deg;
@@ -96,7 +95,7 @@ a {
 #hero-container {
   height: 1000px;
   width: 100%;
-  text-align: center;
+  text-align: left;
   max-width: 1200px;
   display: flex;
   flex-direction: row;
@@ -115,12 +114,13 @@ a {
   font-size: 2rem;
 }
 
-#hero-container span {
-  color: var(--accent-color);
+#about-me {
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-#introduction {
-  text-align: left;
+#hero-container span {
+  color: var(--accent-color);
 }
 
 #hero-buttons-container {
@@ -132,6 +132,7 @@ a {
   max-width: 600px;
   opacity: 0.9;
 }
+
 
 .btn {
   display: inline-block;
@@ -239,6 +240,7 @@ section h3 {
   margin: 0;
   bottom: -2px;
   vertical-align: text-bottom;
+  transition: transform 0.2s ease;
 }
 
 .project-card h4 {
@@ -260,6 +262,12 @@ section h3 {
   border-radius: 10px;
   padding: 0;
   margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 /* About Me */
@@ -270,39 +278,48 @@ section h3 {
 }
 
 /* Skills */
-.skills-container {
-  width: 100%;
+#skills-page {
   display: flex;
   flex-direction: column;
-  min-height: 250px;
-  overflow: hidden;
-  transition: height 0.4s ease;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.skills-container {
+  width: 100%;
+  max-width: 910px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 .skills-container h4 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: var(--text-color);
 }
 
-/* Slides */
-.skills-grid {
+.skills-box {
   position: relative;
   inset: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  /* gap: 1rem; */
+  gap: 1.5rem;
   opacity: 1;
   transition: opacity 0.4s ease-in-out;
+  max-width: 450px;
+  height: fit-content;
 }
 
-/* Skill cards */
+.skills-category {
+  width: 450px;
+  height: fit-content;
+}
+
 .skill-card {
   display: flex;
   align-items: center;
@@ -314,9 +331,7 @@ section h3 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   font-size: 1.1rem;
   box-sizing: border-box;
-  margin: 15px;
   transition: 0.2s ease;
-  /* cursor: pointer; */
   min-width: 170px;
   max-width: 220px;
 }
@@ -327,22 +342,33 @@ section h3 {
   transition: 0.2s ease;
 }
 
-/* Skill icons */
+.non-click {
+  cursor: default;
+  pointer-events: none;
+}
+
 .skills-image {
   width: 40px;
   height: 40px;
 }
 
 /* Contact */
-.contact p {
+
+#contact img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+#contact p {
   margin-bottom: 1rem;
 }
 
-.contact img {
+#contact img {
   width: 25px;
   height: 25px;
-  margin-left: 5px;
+  /* margin-left: 5px; */
   vertical-align: text-bottom;
+  transition: transform 0.2s ease;
 }
 
 /* Footer */
@@ -363,10 +389,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    height: 800px;
+    min-height: 800px;
   }
 
-  #hero-container > * {
+  #hero-container>* {
     margin: 10px;
   }
 
@@ -379,7 +405,7 @@ footer {
     align-items: center;
   }
 
-  .project > * {
+  .project>* {
     margin: 1rem 0;
   }
 }
@@ -387,6 +413,14 @@ footer {
 @media (max-width: 750px) {
   .nav-links {
     display: none;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  #introduction h1 {
+    font-size: 1rem;
   }
 
   .hero {
